@@ -30,7 +30,7 @@ export default function Lifestyle() {
             transition={{ delay: 0.1 }}
             className="text-lg text-[#2C4135]/80"
           >
-            See how BendGrow transforms any space into a lush, thriving indoor jungle.
+            See how BlushEase transforms any space into a lush, thriving indoor jungle.
           </motion.p>
         </div>
 

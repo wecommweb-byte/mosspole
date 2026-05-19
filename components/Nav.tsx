@@ -27,7 +27,7 @@ export default function Nav() {
     >
       <div className="container mx-auto px-4 lg:px-8 flex items-center justify-between">
         <div className="font-serif text-2xl font-semibold tracking-tight text-cream">
-          BendGrow
+          BlushEase
         </div>
 
         {/* Desktop Links */}

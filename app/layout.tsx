@@ -15,10 +15,10 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "BendGrow — The Bendable Moss Pole for Climbing Plants",
+  title: "BlushEase — The Bendable Moss Pole for Climbing Plants",
   description: "Premium 30-inch bendable coco coir moss poles. Shape them into hearts, arches, circles — support your Monstera, Pothos & Philodendron the way they want to grow.",
   openGraph: {
-    title: "BendGrow — The Bendable Moss Pole for Climbing Plants",
+    title: "BlushEase — The Bendable Moss Pole for Climbing Plants",
     description: "Premium 30-inch bendable coco coir moss poles. Shape them into hearts, arches, circles — support your Monstera, Pothos & Philodendron the way they want to grow.",
     type: "website",
   }

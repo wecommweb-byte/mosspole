@@ -18,7 +18,7 @@ export default function Shapes() {
           >
             <h2 className="text-4xl lg:text-5xl mb-6">Any <i>Shape</i> You Need</h2>
             <p className="text-lg text-cream/80 mb-8 leading-relaxed max-w-lg">
-              BendGrow adapts to your plant&apos;s unique growth pattern. Train your Monstera to climb a heart, or support a Pothos on a classic arch. Your imagination is the only limit.
+              BlushEase adapts to your plant&apos;s unique growth pattern. Train your Monstera to climb a heart, or support a Pothos on a classic arch. Your imagination is the only limit.
             </p>
             
             <div className="flex flex-wrap gap-3">

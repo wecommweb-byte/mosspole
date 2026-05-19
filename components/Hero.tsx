@@ -36,7 +36,7 @@ export default function Hero() {
               Shape your plant&apos;s <i>future</i>.
             </motion.h1>
             <motion.p variants={itemVariants} className="text-lg lg:text-xl text-cream/80 max-w-lg mb-10 leading-relaxed">
-              The BendGrow bendable moss pole provides natural, sturdy support that adapts to any climbing plant. Aluminum core, real coco coir.
+              The BlushEase bendable moss pole provides natural, sturdy support that adapts to any climbing plant. Aluminum core, real coco coir.
             </motion.p>
             
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4 mb-12">
