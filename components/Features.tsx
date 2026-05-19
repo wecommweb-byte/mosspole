@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { FEATURES } from "@/lib/constants";
 
 export default function Features() {
@@ -53,9 +54,11 @@ export default function Features() {
               key={i} 
               variants={cardVariants}
               whileHover={{ y: -4 }}
-              className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-cream-alt"
+              className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-cream-alt flex flex-col"
             >
-              <div className="text-4xl mb-6">{feature.icon}</div>
+              <div className="relative w-full h-48 mb-6 rounded-2xl overflow-hidden bg-cream-alt/30">
+                <Image src={feature.image} alt={feature.title} fill className="object-cover" />
+              </div>
               <h3 className="text-xl font-bold mb-3 text-forest">{feature.title}</h3>
               <p className="text-forest/70 leading-relaxed">{feature.description}</p>
             </motion.div>

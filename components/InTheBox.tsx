@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { BOX_ITEMS } from "@/lib/constants";
 
 export default function InTheBox() {
@@ -50,9 +51,11 @@ export default function InTheBox() {
             <motion.div 
               key={i}
               variants={itemVariants}
-              className="bg-[#ece5da] p-8 rounded-3xl flex flex-col items-center justify-center text-center"
+              className="bg-[#ece5da] p-8 rounded-3xl flex flex-col items-center justify-center text-center overflow-hidden group hover:shadow-lg transition-shadow"
             >
-              <span className="text-4xl mb-4">{item.icon}</span>
+              <div className="relative w-32 h-32 mb-6 rounded-full overflow-hidden bg-white shadow-sm group-hover:scale-105 transition-transform">
+                <Image src={item.image} alt={item.name} fill className="object-cover" />
+              </div>
               <span className="font-serif text-3xl text-earth leading-none mb-2">{item.qty}</span>
               <span className="font-medium text-forest">{item.name}</span>
             </motion.div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { SHAPES } from "@/lib/constants";
 
 export default function Shapes() {
@@ -42,20 +43,15 @@ export default function Shapes() {
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 whileHover={{ y: -4, borderColor: "#c49a6c", backgroundColor: "rgba(246, 241, 234, 0.08)" }}
-                className="aspect-square bg-cream/5 border border-cream/10 rounded-3xl flex flex-col items-center justify-center p-6 transition-colors"
+                className="aspect-square bg-cream/5 border border-cream/10 rounded-3xl flex flex-col items-center justify-center p-6 transition-colors overflow-hidden relative group"
               >
-                <svg 
-                  className="w-20 h-20 mb-4" 
-                  viewBox="0 0 100 100" 
-                  fill="none" 
-                  stroke={i % 2 === 0 ? "#5a7a5c" : "#c49a6c"} 
-                  strokeWidth="8" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round"
-                >
-                  <path d={shape.svgPath}></path>
-                </svg>
-                <span className="font-serif text-lg">{shape.label}</span>
+                <Image 
+                  src={shape.image} 
+                  alt={shape.label} 
+                  fill 
+                  className="object-cover opacity-60 group-hover:opacity-80 transition-opacity" 
+                />
+                <span className="font-serif text-2xl relative z-10 text-white font-bold drop-shadow-md">{shape.label}</span>
               </motion.div>
             ))}
           </div>

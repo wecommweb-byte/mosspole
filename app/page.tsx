@@ -4,6 +4,7 @@ import Features from "@/components/Features";
 import Shapes from "@/components/Shapes";
 import InTheBox from "@/components/InTheBox";
 import Plants from "@/components/Plants";
+import Lifestyle from "@/components/Lifestyle";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Shapes />
       <InTheBox />
       <Plants />
+      <Lifestyle />
       <CTA />
       <Footer />
     </main>
