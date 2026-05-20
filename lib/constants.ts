@@ -15,63 +15,57 @@ export const STATS = [
 
 export const FEATURES = [
   {
-    image: "/images/feature_aluminum_core.png",
-    title: "Aluminum Core",
+    title: "Flexible Aluminum Core",
     description: "Thick, pliable aluminum wire that bends smoothly and holds its shape permanently without snapping.",
   },
   {
-    image: "/images/feature_coco_coir.png",
-    title: "Natural Coco Coir",
-    description: "100% natural, breathable coconut shell fiber that retains moisture to encourage aerial root attachment.",
+    title: "100% Natural Coco Coir",
+    description: "Breathable coconut shell fiber that retains moisture to encourage rapid aerial root attachment.",
   },
   {
-    image: "/images/feature_rust_free.png",
-    title: "Rust-Free",
-    description: "Unlike iron or steel cores, our premium aluminum center will never rust or decay in moist potting soil.",
+    title: "Rust & Rot-Free",
+    description: "Unlike iron or wooden cores, our premium aluminum center will never rust or decay in moist soil.",
   },
   {
-    image: "/images/feature_eco_friendly.png",
-    title: "Eco-Friendly",
-    description: "Made from sustainable, renewable materials that are completely safe for your plants and the environment.",
+    title: "Tapered Wood Stake",
+    description: "Designed with a sturdy, sharp bottom that slides easily into the soil without damaging root systems.",
   },
   {
-    image: "/images/feature_sharp_tip.png",
-    title: "Sharp Tip",
-    description: "Designed with a tapered bottom that slides easily into the soil without damaging existing root systems.",
-  },
-  {
-    image: "/images/feature_bendable.png",
     title: "Endlessly Bendable",
     description: "Change your mind? The pole can be straightened and rebent as your plant grows and your aesthetic evolves.",
+  },
+  {
+    title: "Sustainable & Safe",
+    description: "Made from natural, renewable resources completely safe for your plants, children, and pets.",
   },
 ];
 
 export const SHAPES = [
   {
-    label: "Straight",
-    image: "/images/shape_straight.png",
+    label: "Arch",
+    image: "/images/shape_arch.jpg",
+  },
+  {
+    label: "Pretzel",
+    image: "/images/shape_pretzel.jpg",
   },
   {
     label: "Heart",
-    image: "/images/shape_heart.png",
+    image: "/images/shape_heart.jpg",
   },
   {
-    label: "Arch",
-    image: "/images/shape_arch.png",
-  },
-  {
-    label: "Snake",
-    image: "/images/shape_snake.png",
+    label: "Spiral",
+    image: "/images/shape_spiral.jpg",
   },
 ];
 
 export const BOX_ITEMS = [
-  { qty: "2x", name: "30\" Moss Poles", image: "/images/item_moss_poles.png" },
-  { qty: "6.6ft", name: "Jute Rope", image: "/images/item_jute_rope.png" },
-  { qty: "5x", name: "Plant Ties", image: "/images/item_plant_ties.png" },
-  { qty: "0.5m", name: "Velcro Tape", image: "/images/item_velcro_tape.png" },
-  { qty: "2x", name: "Leaf Clips", image: "/images/item_leaf_clips.png" },
-  { qty: "2x", name: "Plant Labels", image: "/images/item_plant_labels.png" },
+  { qty: "2x", name: "30\" Moss Poles", type: "pole" },
+  { qty: "6.6ft", name: "Jute Rope", type: "rope" },
+  { qty: "5x", name: "Plant Ties", type: "ties" },
+  { qty: "0.5m", name: "Velcro Tape", type: "velcro" },
+  { qty: "2x", name: "Leaf Clips", type: "clips" },
+  { qty: "2x", name: "Plant Labels", type: "labels" },
 ];
 
 export const PLANTS = [

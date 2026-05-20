@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { AMAZON_URL, STATS } from "@/lib/constants";
 
 export default function Hero() {
@@ -21,9 +22,15 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-forest text-cream min-h-[90vh] flex items-center">
-      <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden bg-forest text-cream min-h-[95vh] flex items-center">
+      {/* Premium ambient light spots */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-sage/10 rounded-full blur-[120px]"></div>
+        <div className="absolute bottom-10 right-10 w-[600px] h-[600px] bg-earth/5 rounded-full blur-[150px]"></div>
+      </div>
+
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           
           {/* Content */}
           <motion.div 
@@ -70,61 +77,45 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Visual */}
+          {/* Visual - Premium High-Res Image Card */}
           <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.4 }}
-            className="relative flex justify-center items-center min-h-[400px]"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="relative flex justify-center items-center"
           >
-            <motion.svg 
-              animate={{ y: [0, -12, 0] }} 
-              transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-              className="w-full max-w-[500px]" 
-              viewBox="0 0 400 500" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <defs>
-                  <radialGradient id="glowHero" cx="50%" cy="50%" r="50%">
-                      <stop offset="0%" stopColor="#5a7a5c" stopOpacity="0.4"/>
-                      <stop offset="100%" stopColor="#1e3a2f" stopOpacity="0"/>
-                  </radialGradient>
-                  <pattern id="coirPattern" width="10" height="10" patternUnits="userSpaceOnUse">
-                      <path d="M0,5 Q2.5,0 5,5 T10,5" fill="none" stroke="#8b5a2b" strokeWidth="0.8" opacity="0.4"/>
-                      <path d="M0,10 Q2.5,5 5,10 T10,10" fill="none" stroke="#a0522d" strokeWidth="0.8" opacity="0.4"/>
-                  </pattern>
-                  <filter id="shadowGlow">
-                      <feDropShadow dx="0" dy="15" stdDeviation="15" floodColor="#000" floodOpacity="0.4"/>
-                  </filter>
-              </defs>
-              
-              <circle cx="200" cy="250" r="180" fill="url(#glowHero)" />
-              
-              <path d="M120,300 C80,220 130,120 200,160 C250,180 230,280 180,320 C150,340 140,320 120,300 Z" fill="#48634a" filter="url(#shadowGlow)"/>
-              
-              <path d="M150,450 L150,220 C150,100 280,100 280,220" fill="none" stroke="url(#coirPattern)" strokeWidth="36" strokeLinecap="round" filter="url(#shadowGlow)"/>
-              <path d="M150,450 L150,220 C150,100 280,100 280,220" fill="none" stroke="#5c3a21" strokeWidth="32" strokeLinecap="round" opacity="0.8"/>
-              <path d="M150,450 L150,220 C150,100 280,100 280,220" fill="none" stroke="url(#coirPattern)" strokeWidth="32" strokeLinecap="round" opacity="0.9"/>
-              
-              <path d="M150,450 L150,470" fill="none" stroke="#d1d5db" strokeWidth="8" strokeLinecap="round" />
-              
-              <path d="M180,350 C120,300 150,180 230,220 C290,250 280,350 220,380 C190,400 200,370 180,350 Z" fill="#5a7a5c" filter="url(#shadowGlow)"/>
-              
-              <circle cx="280" cy="180" r="6" fill="#c49a6c" />
-              <circle cx="295" cy="195" r="4" fill="#c49a6c" opacity="0.6"/>
-              <circle cx="120" cy="200" r="8" fill="#f6f1ea" opacity="0.2"/>
-            </motion.svg>
+            <div className="relative w-full max-w-[480px] aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-cream/20 bg-forest/40 group">
+              <div className="absolute inset-0 bg-gradient-to-t from-forest/40 via-transparent to-transparent z-10 opacity-60 group-hover:opacity-30 transition-opacity duration-500"></div>
+              <Image 
+                src="/images/hero_product.jpg" 
+                alt="BlushEase Premium Bendable Moss Pole supporting a climbing Monstera plant in a beautifully styled home room" 
+                fill 
+                className="object-cover group-hover:scale-105 transition-transform duration-700" 
+                priority
+              />
+            </div>
             
+            {/* Interactive Floating Badge */}
             <motion.div 
-              animate={{ y: [0, 12, 0] }} 
+              animate={{ y: [0, -10, 0] }} 
               transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-              className="absolute bottom-10 left-0 lg:-left-10 bg-cream text-forest p-4 rounded-2xl shadow-2xl flex flex-col gap-1"
+              className="absolute bottom-6 -left-4 lg:-left-8 bg-cream text-forest px-6 py-4 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] flex flex-col gap-1 z-20 border border-cream/10"
             >
-              <span className="font-serif font-semibold text-xl leading-none">2-Pack</span>
-              <span className="text-sage text-sm font-medium">Includes accessories</span>
+              <span className="font-serif font-semibold text-2xl leading-none text-earth">2-Pack Kit</span>
+              <span className="text-forest/70 text-xs font-medium tracking-wider uppercase">Complete Accessories</span>
+            </motion.div>
+
+            {/* Premium details bubble */}
+            <motion.div 
+              animate={{ y: [0, 10, 0] }} 
+              transition={{ repeat: Infinity, duration: 5, delay: 0.5, ease: "easeInOut" }}
+              className="absolute top-10 -right-4 bg-forest/80 backdrop-blur-md border border-cream/20 text-cream px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3 z-20"
+            >
+              <div className="w-2.5 h-2.5 rounded-full bg-earth animate-pulse"></div>
+              <span className="text-xs uppercase tracking-widest font-medium">100% Natural Coir</span>
             </motion.div>
           </motion.div>
+
         </div>
       </div>
     </section>
