@@ -47,7 +47,7 @@ export const SHAPES = [
   },
   {
     label: "Pretzel",
-    image: "/images/shape_pretzel.jpg",
+    image: "/images/shape_pretzel.png",
   },
   {
     label: "Heart",
