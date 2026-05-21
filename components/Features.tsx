@@ -62,10 +62,10 @@ export default function Features() {
             className="lg:col-span-6 relative group"
           >
             <div className="absolute inset-0 bg-sage/5 rounded-[2.5rem] transform rotate-2 -z-10 group-hover:rotate-1 transition-transform duration-500"></div>
-            <div className="relative w-full aspect-[4/5] md:aspect-square rounded-[2.5rem] overflow-hidden shadow-xl border border-[#ece5da] bg-white">
+            <div className="relative w-full aspect-square rounded-[2.5rem] overflow-hidden shadow-xl border border-[#ece5da] bg-white">
               <Image 
                 src="/images/features_materials.jpg" 
-                alt="Materials Built to Last: Coir Fiber, Flexible Aluminum Core, Sturdy Wood Stake, Jute Twine" 
+                alt="Premium Coir Moss Pole Infographic showing callouts for Jute Twine, 100% Natural Coir Fiber, Flexible Aluminum Core, and Rust-Free stability" 
                 fill 
                 className="object-cover group-hover:scale-102 transition-transform duration-700" 
               />

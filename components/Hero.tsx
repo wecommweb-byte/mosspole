@@ -84,11 +84,11 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="relative flex justify-center items-center"
           >
-            <div className="relative w-full max-w-[480px] aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-cream/20 bg-forest/40 group">
+            <div className="relative w-full max-w-[520px] aspect-square rounded-[2rem] overflow-hidden shadow-2xl border-4 border-cream/20 bg-forest/40 group">
               <div className="absolute inset-0 bg-gradient-to-t from-forest/40 via-transparent to-transparent z-10 opacity-60 group-hover:opacity-30 transition-opacity duration-500"></div>
               <Image 
-                src="/images/hero_product.jpg" 
-                alt="BlushEase Premium Bendable Moss Pole supporting a climbing Monstera plant in a beautifully styled home room" 
+                src="/images/hero_product.png" 
+                alt="BlushEase Premium Bendable Moss Poles in four elegant shapes (Spiral, Circle, Heart, and Arch) with lush green climbing foliage in white pots" 
                 fill 
                 className="object-cover group-hover:scale-105 transition-transform duration-700" 
                 priority
