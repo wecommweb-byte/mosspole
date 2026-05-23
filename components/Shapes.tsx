@@ -41,11 +41,11 @@ export default function Shapes() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.8 }}
-            className="relative w-full aspect-[16/10] rounded-[2rem] overflow-hidden shadow-2xl border border-cream/10 bg-[#1e2a1f]"
+            className="relative w-full aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl border border-cream/10 bg-[#1e2a1f]"
           >
             <Image 
               src="/images/shapes_collage.jpg" 
-              alt="Set the Shape, Fix the Vibe: Arch, Pretzel, Heart, and Spiral moss pole shapes displayed together" 
+              alt="Set the Shape, Fix the Vibe placement scenes collage: Window, Vanity Table, Bathroom, Work Desk, Corridor, and Book Shelf setups" 
               fill 
               className="object-cover"
             />
