@@ -215,10 +215,10 @@ export default function Features() {
             className="lg:col-span-6 order-1 lg:order-2 relative group"
           >
             <div className="absolute inset-0 bg-earth/5 rounded-[2.5rem] transform -rotate-2 -z-10 group-hover:rotate-0 transition-transform duration-500"></div>
-            <div className="relative w-full aspect-[4/5] md:aspect-square rounded-[2.5rem] overflow-hidden shadow-xl border border-[#ece5da] bg-white">
+            <div className="relative w-full aspect-[4/3] rounded-[2.5rem] overflow-hidden shadow-xl border border-[#ece5da] bg-white">
               <Image 
                 src="/images/features_installation.jpg" 
-                alt="Quick & Easy Installation Steps infographic: 1. Shape, 2. Insert, 3. Tie, 4. Grow" 
+                alt="Quick & Easy Installation Steps infographic: 1. Shape the Moss Pole, 2. Tie the Plant with Moss Pole, 3. Insert Moss Pole into Plant, 4. Put in Anywhere You Want" 
                 fill 
                 className="object-cover group-hover:scale-102 transition-transform duration-700" 
               />
