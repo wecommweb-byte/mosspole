@@ -41,22 +41,14 @@ export default function Shapes() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.8 }}
-            className="relative w-full aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl border border-cream/10 bg-[#1e2a1f]"
+            className="relative w-full aspect-square rounded-[2rem] overflow-hidden shadow-2xl border border-cream/10 bg-[#1e2a1f]"
           >
             <Image 
               src="/images/shapes_collage.jpg" 
-              alt="Set the Shape, Fix the Vibe placement scenes collage: Window, Vanity Table, Bathroom, Work Desk, Corridor, and Book Shelf setups" 
+              alt="Loves All Climbers infographic showing Monstera, Delicate Vines, and Pothos climbing bendable coir moss poles in white pots" 
               fill 
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-forest/80 via-forest/20 to-transparent flex items-end p-8">
-              <div className="backdrop-blur-md bg-forest/40 border border-cream/10 p-5 rounded-2xl max-w-sm">
-                <span className="text-earth text-xs font-semibold uppercase tracking-wider block mb-1">Set the Shape. Fix the Vibe.</span>
-                <p className="text-xs text-cream/90 leading-relaxed">
-                  Choose from four elegant styles that support healthy, rapid foliage growth while matching your home design aesthetics.
-                </p>
-              </div>
-            </div>
           </motion.div>
         </div>
 
