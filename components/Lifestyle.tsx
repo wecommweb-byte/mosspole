@@ -30,66 +30,24 @@ export default function Lifestyle() {
           </motion.p>
         </div>
 
-        {/* Staggered Stretched Stately 2-Column Gallery Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          
-          {/* Left Column: Lobby Scene */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.8 }}
-            className="flex flex-col group cursor-default"
-          >
-            <div className="relative w-full aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl border border-[#ece5da] bg-[#e3dacd] mb-6">
-              <Image 
-                src="/images/lifestyle_lobby.jpg" 
-                alt="BlushEase bendable moss pole styled in a luxury modern office lobby reception room next to minimalist furniture" 
-                fill 
-                className="object-cover group-hover:scale-103 transition-transform duration-[4s]" 
-              />
-              {/* Subtle hover vignette effect */}
-              <div className="absolute inset-0 bg-forest/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            </div>
-            
-            <div className="px-4">
-              <span className="text-earth text-xs uppercase tracking-widest font-bold block mb-1">Architectural Placement</span>
-              <h3 className="font-serif text-2xl lg:text-3xl text-forest font-semibold mb-2 group-hover:text-sage transition-colors duration-300">Modern Lobby Reception</h3>
-              <p className="text-sm text-forest/70 leading-relaxed">
-                Add structured height and organic luxury to open-concept spaces. BlushEase acts as a breathing partition, transforming cold walls into warm, vibrant interior statements.
-              </p>
-            </div>
-          </motion.div>
+        {/* Placement Scenes Collage */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <div className="relative w-full rounded-[2.5rem] overflow-hidden shadow-2xl border border-[#ece5da] bg-[#e3dacd] group">
+            <Image
+              src="/images/Bring Nature Indoor (1).jpg.jpg"
+              alt="Bring Nature Indoors — BlushEase moss poles styled across beautiful indoor living spaces"
+              width={2400}
+              height={900}
+              className="w-full h-auto object-cover group-hover:scale-[1.01] transition-transform duration-700"
+            />
+          </div>
+        </motion.div>
 
-          {/* Right Column: Multi-Scene Grid Collage */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex flex-col group lg:mt-16 cursor-default"
-          >
-            <div className="relative w-full aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl border border-[#ece5da] bg-[#e3dacd] mb-6">
-              <Image 
-                src="/images/lifestyle_grid.jpg" 
-                alt="Grid collage of multiple BlushEase moss poles showcasing versatility across cozy study desks, greenhouse corners, and bookshelves" 
-                fill 
-                className="object-cover group-hover:scale-103 transition-transform duration-[4s]" 
-              />
-              <div className="absolute inset-0 bg-forest/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
-            </div>
-            
-            <div className="px-4">
-              <span className="text-earth text-xs uppercase tracking-widest font-bold block mb-1">Design Versatility</span>
-              <h3 className="font-serif text-2xl lg:text-3xl text-forest font-semibold mb-2 group-hover:text-sage transition-colors duration-300">Cozy Home Aesthetics</h3>
-              <p className="text-sm text-forest/70 leading-relaxed">
-                Whether placed on sunlit study desks, layered inside compact greenhouse cabinets, or cascading down bookshelves, BlushEase anchors beautifully in any room configuration.
-              </p>
-            </div>
-          </motion.div>
-
-        </div>
-        
       </div>
     </section>
   );
